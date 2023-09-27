@@ -64,9 +64,9 @@ async function fetchMealByIngredient() {
             alert(`There are no meals with the ingredient: ${ingredient.replace(/_/g, ' ')}`);
         }
     } catch (error) {
-        // Handle errors, e.g., network errors or parsing errors
+        // Handle errors
         console.error('An error occurred:', error);
-        throw error; // Re-throw the error to propagate it
+        throw error;
     }
 }
 
@@ -134,7 +134,6 @@ let orders = {
 
 // Function to update the completion status of an order
 function updateOrderCompletionStatus() {
-    // ... (same as before)
 
     if (newCompletionStatus === '0') {
         // Do nothing, order remains incomplete
@@ -153,7 +152,6 @@ function updateOrderCompletionStatus() {
     }
 }
 
-// ... (rest of your code)
 
 
 // Function to show all completed and incomplete orders
@@ -170,5 +168,4 @@ function showAllOrders() {
 }
 
 
-// ... (rest of your code)
 
